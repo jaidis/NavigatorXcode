@@ -9,9 +9,10 @@
 import UIKit
 import SQLite3
 
-class ViewController2: UIViewController {
+class ViewController2: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
     var db: OpaquePointer?
-    var list: Array<Any> = []
+    var list: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,21 +51,24 @@ class ViewController2: UIViewController {
             list.append(url)
         }
         
-        for elemento in list {
-            print(elemento)
-        }
+//        for elemento in list {
+//            print(elemento)
+//        }
         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
-    */
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return list.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:UITableViewCell=UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "mycell")
+        cell.textLabel?.text  = list[indexPath.row]
+        return cell
+    }
 
 }
