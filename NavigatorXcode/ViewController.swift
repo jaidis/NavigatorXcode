@@ -51,6 +51,13 @@ class ViewController: UIViewController {
     }
     
     func cargarUrl(){
+        
+        var string:String = tf_Url.text!
+        if (!string.contains("https") || !string.contains("http")){
+            string = string.replacingOccurrences(of: " ", with: "+", options: .literal, range: nil)
+            tf_Url.text! = "https://google.com/search?q="+string
+        }
+        
         let myurl = URL(string: tf_Url.text!)!
         wv_Navegador.load(URLRequest(url: myurl))
         wv_Navegador.allowsBackForwardNavigationGestures = true
