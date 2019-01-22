@@ -11,6 +11,11 @@ import SQLite3
 
 class ViewController2: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBAction func btBackView(_ sender: Any) {
+        print("Heeee")
+        self.view.window!.rootViewController?.dismiss(animated: true, completion: nil)
+    }
+    
     var db: OpaquePointer?
     var list: [String] = []
     
