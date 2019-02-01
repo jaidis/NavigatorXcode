@@ -18,62 +18,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EhW-DK-vSh">
-                                <rect key="frame" x="20" y="53" width="374" height="809"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VU5-Kg-BWh">
-                                        <rect key="frame" x="0.0" y="8" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="icons8-chevron_left_round"/>
-                                        <connections>
-                                            <action selector="bt_Atras:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rtL-jd-unY"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJY-d1-JQI">
-                                        <rect key="frame" x="56" y="8" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="icons8-chevron_right_round"/>
-                                        <connections>
-                                            <action selector="bt_Avanzar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gLR-ev-Bru"/>
-                                        </connections>
-                                    </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://www.google.es" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Fsy-bV-Kte">
-                                        <rect key="frame" x="112" y="17" width="154" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oiz-fd-goG">
-                                        <rect key="frame" x="274" y="8" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="icons8-search"/>
-                                        <connections>
-                                            <action selector="bt_Buscar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3oX-Gl-IDh"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfR-Rg-InR">
-                                        <rect key="frame" x="330" y="8" width="48" height="48"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="icons8-briefcase"/>
-                                        <connections>
-                                            <segue destination="oAk-Yz-E0M" kind="show" identifier="Historial" id="XJV-wR-Pfu"/>
-                                        </connections>
-                                    </button>
-                                    <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0sj-24-fj2">
-                                        <rect key="frame" x="0.0" y="64" width="374" height="745"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <wkWebViewConfiguration key="configuration">
-                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                            <wkPreferences key="preferences"/>
-                                        </wkWebViewConfiguration>
-                                    </wkWebView>
-                                </subviews>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VU5-Kg-BWh">
+                                <rect key="frame" x="20" y="44" width="48" height="48"/>
+                                <state key="normal" image="icons8-chevron_left_round"/>
+                                <connections>
+                                    <action selector="bt_Atras:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rtL-jd-unY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJY-d1-JQI">
+                                <rect key="frame" x="76" y="44" width="48" height="48"/>
+                                <state key="normal" image="icons8-chevron_right_round"/>
+                                <connections>
+                                    <action selector="bt_Avanzar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gLR-ev-Bru"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oiz-fd-goG">
+                                <rect key="frame" x="290" y="44" width="48" height="48"/>
+                                <state key="normal" image="icons8-search"/>
+                                <connections>
+                                    <action selector="bt_Buscar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3oX-Gl-IDh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfR-Rg-InR">
+                                <rect key="frame" x="346" y="44" width="48" height="48"/>
+                                <state key="normal" image="icons8-briefcase"/>
+                                <connections>
+                                    <segue destination="oAk-Yz-E0M" kind="show" identifier="Historial" id="XJV-wR-Pfu"/>
+                                </connections>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0sj-24-fj2">
+                                <rect key="frame" x="20" y="138" width="374" height="682"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://www.google.es" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Fsy-bV-Kte">
+                                <rect key="frame" x="20" y="100" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VU5-Kg-BWh" firstAttribute="leading" secondItem="Fsy-bV-Kte" secondAttribute="leading" id="5aD-PK-HYk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0sj-24-fj2" secondAttribute="bottom" constant="42" id="6Wi-Tn-nxx"/>
+                            <constraint firstItem="Fsy-bV-Kte" firstAttribute="leading" secondItem="0sj-24-fj2" secondAttribute="leading" id="BvP-Uy-dYf"/>
+                            <constraint firstItem="jJY-d1-JQI" firstAttribute="leading" secondItem="VU5-Kg-BWh" secondAttribute="trailing" constant="8" symbolic="YES" id="IRf-be-vvD"/>
+                            <constraint firstItem="ZfR-Rg-InR" firstAttribute="trailing" secondItem="Fsy-bV-Kte" secondAttribute="trailing" id="JIs-b7-IDU"/>
+                            <constraint firstItem="ZfR-Rg-InR" firstAttribute="leading" secondItem="Oiz-fd-goG" secondAttribute="trailing" constant="8" symbolic="YES" id="S4D-by-Bfm"/>
+                            <constraint firstItem="Fsy-bV-Kte" firstAttribute="trailing" secondItem="0sj-24-fj2" secondAttribute="trailing" id="T98-wC-WhO"/>
+                            <constraint firstItem="VU5-Kg-BWh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ThJ-85-na0"/>
+                            <constraint firstItem="VU5-Kg-BWh" firstAttribute="top" secondItem="jJY-d1-JQI" secondAttribute="top" id="atB-hL-tbd"/>
+                            <constraint firstItem="0sj-24-fj2" firstAttribute="top" secondItem="Fsy-bV-Kte" secondAttribute="bottom" constant="8" symbolic="YES" id="bWH-nx-RAB"/>
+                            <constraint firstItem="ZfR-Rg-InR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="gQM-Pg-Ipm"/>
+                            <constraint firstItem="Oiz-fd-goG" firstAttribute="top" secondItem="ZfR-Rg-InR" secondAttribute="top" id="gjd-0b-yRA"/>
+                            <constraint firstItem="VU5-Kg-BWh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="l1W-Mk-4Bq"/>
+                            <constraint firstItem="jJY-d1-JQI" firstAttribute="top" secondItem="Oiz-fd-goG" secondAttribute="top" id="pfa-Hu-gNw"/>
+                            <constraint firstItem="Fsy-bV-Kte" firstAttribute="top" secondItem="VU5-Kg-BWh" secondAttribute="bottom" constant="8" symbolic="YES" id="tjh-fG-heg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
