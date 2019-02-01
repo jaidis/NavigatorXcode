@@ -36,7 +36,7 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
         }
         
         //this is our select query
-        let queryString = "SELECT * FROM HISTORY ORDER BY id DESC LIMIT 10"
+        let queryString = "SELECT * FROM HISTORY ORDER BY id DESC LIMIT 25"
         
         //statement pointer
         var stmt:OpaquePointer?

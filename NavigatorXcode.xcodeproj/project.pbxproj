@@ -13,6 +13,7 @@
 		0C398BC821F1154C0087B76D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C398BC721F1154C0087B76D /* ViewController.swift */; };
 		0C398BCB21F1154D0087B76D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C398BC921F1154D0087B76D /* Main.storyboard */; };
 		0C398BD021F1154E0087B76D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C398BCE21F1154E0087B76D /* LaunchScreen.storyboard */; };
+		0CA700F22204B138006F3BC8 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA700F12204B138006F3BC8 /* SearchTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0C398BCA21F1154D0087B76D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C398BCF21F1154E0087B76D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C398BD121F1154E0087B76D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CA700F12204B138006F3BC8 /* SearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				0C1B992821F239C40004E7DE /* Assets.xcassets */,
 				0C398BCE21F1154E0087B76D /* LaunchScreen.storyboard */,
 				0C398BD121F1154E0087B76D /* Info.plist */,
+				0CA700F12204B138006F3BC8 /* SearchTextField.swift */,
 			);
 			path = NavigatorXcode;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				0C398BC821F1154C0087B76D /* ViewController.swift in Sources */,
 				0C398BC621F1154C0087B76D /* AppDelegate.swift in Sources */,
 				0C1B992B21F24C940004E7DE /* ViewController2.swift in Sources */,
+				0CA700F22204B138006F3BC8 /* SearchTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
